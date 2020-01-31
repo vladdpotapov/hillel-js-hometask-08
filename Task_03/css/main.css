@@ -1,3 +1,7 @@
+body {
+    background-color: #464646;
+}
+
 #table {
     width: 550px;
 }
@@ -5,6 +9,6 @@
     display: inline-block;
     width: 50px;
     border: 1px solid #000000;
-    background-color: #888888;
+    background-color: #9b4b00;
     text-align: center;
 }
