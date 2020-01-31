@@ -11,7 +11,7 @@ let userUrl;
 
 button01.addEventListener('click', function(){
     userUrl = prompt('Enter URL');
-    if (userUrl.indexOf('https://') +1) {
+    if ((userUrl.indexOf('https://') +1) || (userUrl.indexOf('http://') + 1)) {
         return userUrl;
     } else {
         let string = userUrl.split();
