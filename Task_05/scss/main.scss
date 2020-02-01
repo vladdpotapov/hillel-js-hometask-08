@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #535353;
+}
+
+.content-frame {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.text-box {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 0 20px 10px 20px;
+}
+
+.heading {
+    text-align: center;
+    color: #ffffff;
+}
+
+.text {
+    color: #acacac;
+}
+
+.button {
+    padding: 10px 25px;
+    background-color: #ff9900;
+    color: #353535;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    font-weight: 900;
+}
+
+.button:hover {
+    background-color: #eeff00;
+    cursor: pointer;
+}
+
+.vote-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 30px;
+}
+
+.vote-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 330%;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.vote-button:not(:last-child) {
+    margin-right: 25px;
+}
+
+.vote-button:hover {
+    opacity: 0.5;
+}
+
+#vote-button1 {
+    background-image: url(../img/feedback-05.png);
+}
+
+#vote-button2 {
+    background-image: url(../img/feedback-04.png);
+}
+
+#vote-button3 {
+    background-image: url(../img/feedback-03.png);
+}
+
+#vote-button4 {
+    background-image: url(../img/feedback-02.png);
+}
+
+#vote-button5 {
+    background-image: url(../img/feedback-01.png);
+}
+
+.counter-box {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px;
+}
+
+.counter {
+    padding: 0 20px;
+    color: #ffffff;
+}
+.counter:not(:last-child) {
+    margin-right: 35px;
+}
