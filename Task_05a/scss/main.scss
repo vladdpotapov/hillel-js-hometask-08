@@ -1,0 +1,104 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'templates';
+
+// GENERAL
+body {
+    background-color: #5f5f5f;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content-frame {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// INTRODUCTION
+.heading-box {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.heading {
+    @include text-style(700, 40px, 40px, none, uppercase, none, $color-03);
+}
+
+.text-box {
+    margin: 20px auto;
+    padding: 10px 0;
+    text-align: justify;
+    max-width: 500px;
+    border-top: 1px solid $color-02;
+    border-bottom: 1px solid $color-02;
+}
+
+.text {
+    @include text-style(400, 15px, 20px, none, normal, none, $color-02);
+}
+
+// POLL
+.poll-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.poll__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+#button01 {
+    background-image: url(../img/feedback-01.png);
+    @extend %button-background;
+}
+
+#button02 {
+    background-image: url(../img/feedback-02.png);
+    @extend %button-background;
+}
+
+#button03 {
+    background-image: url(../img/feedback-03.png);
+    @extend %button-background;
+}
+
+#button04 {
+    background-image: url(../img/feedback-04.png);
+    @extend %button-background;
+}
+
+#button05 {
+    background-image: url(../img/feedback-05.png);
+    @extend %button-background;
+}
+
+.poll__counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    min-height: 30px;
+    border-top: 1px solid $color-02;
+    border-bottom: 1px solid $color-02;
+    color: $color-03;
+}

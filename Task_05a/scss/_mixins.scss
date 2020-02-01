@@ -1,0 +1,9 @@
+@mixin text-style ($fw, $fz, $lh, $ls, $tt, $td, $col) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+    text-decoration: $td;
+    color: $col;
+}
